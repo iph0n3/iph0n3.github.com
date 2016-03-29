@@ -207,6 +207,136 @@
 
     
     
+      
+      
+        
+        
+        
+      
+
+      
+    
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/29/rabbitmq/" itemprop="url">
+                  centOs 6.4安装rabbitMq
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-29T10:46:21+08:00" content="2016-03-29">
+              2016-03-29
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h5 id="centOs_6-4安装rabbitMq">centOs 6.4安装rabbitMq</h5><p>centOs6.4坑比较多，</p>
+<ol>
+<li><p>yum安装nc会报错Procotol not，解决办法使用旧版的nc重新安装。</p>
+ <figure class="highlight"><figcaption><span>-ivh</span><a href="http://vault.centos.org/6.6/os/x86_64/Packages/nc-1.84-22.el6.x86_64.rpm" target="_blank" rel="external">```</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;2. &#27809;&#26377;&#30452;&#25509;yum&#23433;&#35013;&#30340;rabbitMq&#10;&#10;&#62; &#23433;&#35013;&#32534;&#35793;&#29615;&#22659;&#65292;&#10;&#10;```yum install make gcc gcc-c++ kernel-devel m4 -y</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<blockquote>
+<p>安装git</p>
+</blockquote>
+<figure class="highlight"><figcaption><span>install git```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#62;&#23433;&#35013;erlang&#10;&#19979;&#36733;&#21253;&#24182;&#32534;&#35793;&#10;&#10;&#62;&#19979;&#36733;rabbitmq&#21253;&#10;&#10;1. ```git clone https://github.com/rabbitmq/rabbitmq-server.git</span><br></pre></td></tr></table></figure>
+<ol>
+<li>cd rabbitmq-server</li>
+<li>make</li>
+<li>cd script</li>
+<li>./rabbitmq-server</li>
+</ol>
+<h5 id="faq">faq</h5><p>有时候直接运行./rabbitmq-server报错</p>
+<p><code>ERROR: epmd error for host &quot;****&quot;: timeout (timed out establishing tcp connection)</code></p>
+<p>解决办法：<br>    vi /etc/hosts<br>    增加主机名与127.0.0.1的绑定</p>
+
+          
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
 
     
       
@@ -311,7 +441,7 @@
 </li>
 </ul>
 <h5 id="如何发表文章">如何发表文章</h5><ul>
-<li>执行命令 <code>hexo new post</code> ‘我的文章名称’</li>
+<li>执行命令 <code>hexo new &#39;我的文章名称&#39;</code></li>
 <li>添加，tags:破路 或者（读书）</li>
 <li>添加categories：（读书、破路等） </li>
 <li>hexo g</li>
@@ -719,21 +849,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
