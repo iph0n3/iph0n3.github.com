@@ -300,27 +300,14 @@
       
         
           
-            <h5 id="centOs_6-4安装rabbitMq">centOs 6.4安装rabbitMq</h5><p>centOs6.4坑比较多，</p>
-<ol>
-<li><p>yum安装nc会报错Procotol not，解决办法使用旧版的nc重新安装。</p>
- <figure class="highlight"><figcaption><span>-ivh</span><a href="http://vault.centos.org/6.6/os/x86_64/Packages/nc-1.84-22.el6.x86_64.rpm" target="_blank" rel="external">```</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;2. &#27809;&#26377;&#30452;&#25509;yum&#23433;&#35013;&#30340;rabbitMq&#10;&#10;&#62; &#23433;&#35013;&#32534;&#35793;&#29615;&#22659;&#65292;&#10;&#10;```yum install make gcc gcc-c++ kernel-devel m4 -y</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<blockquote>
-<p>安装git</p>
-</blockquote>
-<figure class="highlight"><figcaption><span>install git```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#62;&#23433;&#35013;erlang&#10;&#19979;&#36733;&#21253;&#24182;&#32534;&#35793;&#10;&#10;&#62;&#19979;&#36733;rabbitmq&#21253;&#10;&#10;1. ```git clone https://github.com/rabbitmq/rabbitmq-server.git</span><br></pre></td></tr></table></figure>
-<ol>
-<li>cd rabbitmq-server</li>
-<li>make</li>
-<li>cd script</li>
-<li>./rabbitmq-server</li>
-</ol>
-<h5 id="faq">faq</h5><p>有时候直接运行./rabbitmq-server报错</p>
-<p><code>ERROR: epmd error for host &quot;****&quot;: timeout (timed out establishing tcp connection)</code></p>
-<p>解决办法：<br>    vi /etc/hosts<br>    增加主机名与127.0.0.1的绑定</p>
-
           
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/29/rabbitmq/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -421,41 +408,14 @@
       
         
           
-            <h5 id="如何在新系统中搭建当前的博客平台">如何在新系统中搭建当前的博客平台</h5><ul>
-<li>mac: <ul>
-<li>安装brew， </li>
-<li>安装nodejs, <code>brew install nodejs</code> </li>
-<li>安装hexo， <code>npm install hexo</code></li>
-<li>安装依赖， <code>npm install</code></li>
-<li>安装git，<code>brew install git</code></li>
-<li>配置git，</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li>win:<ul>
-<li>安装nodejs</li>
-<li>其他同上</li>
-</ul>
-</li>
-</ul>
-<h5 id="如何发表文章">如何发表文章</h5><ul>
-<li>执行命令 <code>hexo new &#39;我的文章名称&#39;</code></li>
-<li>添加，tags:破路 或者（读书）</li>
-<li>添加categories：（读书、破路等） </li>
-<li>hexo g</li>
-<li>sudo     hexo deploy</li>
-</ul>
-<p>图床<br>用的途牛<br><a href="https://portal.qiniu.com/bucket/olimage/resource#1" target="_blank" rel="external">https://portal.qiniu.com/bucket/olimage/resource#1</a></p>
-<h5 id="如何同步文章到github">如何同步文章到github</h5><h5 id="遇到的问题">遇到的问题</h5><ol>
-<li><p><code>YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at lin</code><br> 问题是格式不对，所有文件中:后面都要跟一个空格，如果不跟会报错</p>
-</li>
-<li><p><code>{ [Error: Cannot find module &#39;./build/Release/DTraceProviderBindings&#39;] code: &#39;MODULE_NOT_FOUND&#39; }</code><br> 原因不知，解决办法，<code>$npm install hexo --no-optional</code></p>
-</li>
-</ol>
-
           
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/01/12/how/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -556,16 +516,14 @@
       
         
           
-            <p>书里提到的三步工作法模糊难懂，并没有直白的表现出来而且存在前后不一的表述，很难让人抓住核心的三步。如下是整本书的导图</p>
-<p><img src="http://7ktsa8.com1.z0.glb.clouddn.com/book.jpg" alt=""></p>
-<p>翻译: 成小留，不得不说翻译真的很烂。</p>
-<h5 id="初读">初读</h5><p>读完了这本GeneKim、Kevin Behr以及George Spafford联合写作的书。这本书是在图灵教育的十月新书中受到强烈推荐的。初读下来并没有带来太大的惊喜。唯一的亮点可能是告诫职场同仁们，职场是需要运营的，职场会充满斗争充满挑战。</p>
-<h5 id="读后记">读后记</h5><p>这本书定位为一本职场尤其是IT职场指导书，以小说的形式。然而故事情节却并不吸引人，讲述了主人公比尔升职任IT运维部副总裁，接手就遇到各种棘手的故障，比尔在如何思考方案解决故障问题，并在艾瑞克的启发下做了一些流程改进，找到瓶颈布伦特，解放布伦特，让布伦特不再是不可或缺。继而公司重点开展的凤凰项目出现问题，远没有达到预期。在艾瑞克的指导下，启动”独角兽“项目。让IT运维部实现快速部署，一天可以成功发布N次。</p>
-<p>最终由于”独角兽“和”独角鲸”项目的成功让比尔被提拔到CIO的职位，而在工作中不断制造障碍的莎拉则黯然离职。</p>
-<h5 id="感悟">感悟</h5><p>掩卷长思，近半年的经历让我有一些感触。书中提到的职场经历与现实若即若离。权且记录下让我感触的几点：</p>
-<p>刚接手工作首先要建立良好的沟通渠道，与相关的部门同事建立良好合作关系<br>建立可以快速部署的IT运维部门，一天可以部署上万次<br>控制等待时间<br>训练，训练到重复，重复成习惯<br>识别当前工作的约束点，解决他<br>建立快速的反馈机制</p>
-
           
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/12/04/book/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -666,14 +624,14 @@
       
         
           
-            <h5 id="我以为搭建一个blog只需要花费我3个小时">我以为搭建一个blog只需要花费我3个小时</h5><p>没想到花费了我整整6个小时。</p>
-<p>2015/11/30 14:00- 20:00,确实有一些小坑，让我跌倒了几次。闲言少说，以后要认真一点。记录一下生活和技术。</p>
-<blockquote>
-<p>人生是航行，不知道飞到哪里才能看到结局，有时候人都死了，飞船还在飞。之后人间就流传着嫦娥的故事、飞天的故事。故事的人却早已不再。</p>
-</blockquote>
-<p>航行….</p>
-
           
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/11/30/readbook/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -774,21 +732,14 @@
       
         
           
-            <h5 id="坑中小计">坑中小计</h5><blockquote>
-<p>模板配置</p>
-</blockquote>
-<p>有些模板需要安装一些工具才能使用所以干脆不用需要安装的模板来做，偷懒的办法</p>
-<blockquote>
-<p>git需要生成证书</p>
-</blockquote>
-<p>不生成证书是无法顺利发布的deploy的，所以要按照顺序生成证书</p>
-<blockquote>
-<p>deploy出错</p>
-</blockquote>
-<p>出过多个，一直没解决。<br>·Error: Permission denied (publickey).<br>fatal: Could not read from remote repository.·</p>
-<p>解决办法：换了git版本到1.9发现仍然不行，继续尝试其他办法，最终使用git的bash可以成功deploy，使用系统bash依然失败，暂时没有解决办法</p>
-
           
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/11/30/about/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -856,14 +807,14 @@
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

@@ -60,7 +60,15 @@
 <meta name="description" content="centOs 6.4安装rabbitMqcentOs6.4坑比较多，
 
 yum安装nc会报错Procotol not，解决办法使用旧版的nc重新安装。
- -ivh```1&amp;#10;2. &amp;#27809;&amp;#26377;&amp;#30452;&amp;#25509;yum&amp;#23433;&amp;#35013;&amp;#30340;rabbitMq&amp;#10;&amp;#10;&amp;#62; &amp;#23433;&amp;#35013;&amp;#32534;">
+ rpm -ivh http://vault.centos.org/6.6/os/x86_64/Packages/nc-1.84-22.el6.x86_64.rpm
+
+没有直接yum安装的rabbitMq
+
+
+
+安装编译环境，
+
+yum insta">
 <meta property="og:type" content="article">
 <meta property="og:title" content="centOs 6.4安装rabbitMq">
 <meta property="og:url" content="http://yoursite.com/2016/03/29/rabbitmq/index.html">
@@ -68,14 +76,30 @@ yum安装nc会报错Procotol not，解决办法使用旧版的nc重新安装。
 <meta property="og:description" content="centOs 6.4安装rabbitMqcentOs6.4坑比较多，
 
 yum安装nc会报错Procotol not，解决办法使用旧版的nc重新安装。
- -ivh```1&amp;#10;2. &amp;#27809;&amp;#26377;&amp;#30452;&amp;#25509;yum&amp;#23433;&amp;#35013;&amp;#30340;rabbitMq&amp;#10;&amp;#10;&amp;#62; &amp;#23433;&amp;#35013;&amp;#32534;">
-<meta property="og:updated_time" content="2016-03-29T03:16:09.000Z">
+ rpm -ivh http://vault.centos.org/6.6/os/x86_64/Packages/nc-1.84-22.el6.x86_64.rpm
+
+没有直接yum安装的rabbitMq
+
+
+
+安装编译环境，
+
+yum insta">
+<meta property="og:updated_time" content="2016-03-29T03:33:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="centOs 6.4安装rabbitMq">
 <meta name="twitter:description" content="centOs 6.4安装rabbitMqcentOs6.4坑比较多，
 
 yum安装nc会报错Procotol not，解决办法使用旧版的nc重新安装。
- -ivh```1&amp;#10;2. &amp;#27809;&amp;#26377;&amp;#30452;&amp;#25509;yum&amp;#23433;&amp;#35013;&amp;#30340;rabbitMq&amp;#10;&amp;#10;&amp;#62; &amp;#23433;&amp;#35013;&amp;#32534;">
+ rpm -ivh http://vault.centos.org/6.6/os/x86_64/Packages/nc-1.84-22.el6.x86_64.rpm
+
+没有直接yum安装的rabbitMq
+
+
+
+安装编译环境，
+
+yum insta">
 
 
 
@@ -291,14 +315,25 @@ yum安装nc会报错Procotol not，解决办法使用旧版的nc重新安装。
         <h5 id="centOs_6-4安装rabbitMq">centOs 6.4安装rabbitMq</h5><p>centOs6.4坑比较多，</p>
 <ol>
 <li><p>yum安装nc会报错Procotol not，解决办法使用旧版的nc重新安装。</p>
- <figure class="highlight"><figcaption><span>-ivh</span><a href="http://vault.centos.org/6.6/os/x86_64/Packages/nc-1.84-22.el6.x86_64.rpm" target="_blank" rel="external">```</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;2. &#27809;&#26377;&#30452;&#25509;yum&#23433;&#35013;&#30340;rabbitMq&#10;&#10;&#62; &#23433;&#35013;&#32534;&#35793;&#29615;&#22659;&#65292;&#10;&#10;```yum install make gcc gcc-c++ kernel-devel m4 -y</span><br></pre></td></tr></table></figure>
+<p> <code>rpm -ivh http://vault.centos.org/6.6/os/x86_64/Packages/nc-1.84-22.el6.x86_64.rpm</code></p>
+</li>
+<li><p>没有直接yum安装的rabbitMq</p>
 </li>
 </ol>
 <blockquote>
+<p>安装编译环境，</p>
+</blockquote>
+<p><code>yum install make gcc gcc-c++ kernel-devel m4 -y</code></p>
+<blockquote>
 <p>安装git</p>
 </blockquote>
-<figure class="highlight"><figcaption><span>install git```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#62;&#23433;&#35013;erlang&#10;&#19979;&#36733;&#21253;&#24182;&#32534;&#35793;&#10;&#10;&#62;&#19979;&#36733;rabbitmq&#21253;&#10;&#10;1. ```git clone https://github.com/rabbitmq/rabbitmq-server.git</span><br></pre></td></tr></table></figure>
+<p><code>yum install git</code></p>
+<blockquote>
+<p>安装erlang<br>下载包并编译</p>
+<p>下载rabbitmq包</p>
+</blockquote>
 <ol>
+<li><code>git clone https://github.com/rabbitmq/rabbitmq-server.git</code></li>
 <li>cd rabbitmq-server</li>
 <li>make</li>
 <li>cd script</li>
@@ -405,14 +440,14 @@ yum安装nc会报错Procotol not，解决办法使用旧版的nc重新安装。
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
